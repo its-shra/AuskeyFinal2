@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+* {
+  transition: all 0.3s ease-out;
+}
+
+html, body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.container1 {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: #262626;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+}
+
+p.small {
+  font-size: 14px;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card3 {
+  height: 350px;
+  max-width: 262px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 16px; /* Reduce padding for better image placement */
+  margin: 12px;
+  text-decoration: none;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+  position: relative; /* Set to relative for absolute positioning of image */
+}
+
+.card3 img {
+  width: 100%; /* Make the image responsive to the card size */
+  height: auto;
+}
+
+.go-corner {
+  opacity: 0.7;
+}
+
+.card3:hover {
+  border: 1px solid #00838d;
+  box-shadow: 0 0 10px rgba(0, 131, 141, 0.5);
+  z-index: 500;
+}
+
+.card3:hover p {
+  color: #00838d;
+}
+
+.card3:hover .go-corner {
+  transition: opacity 0.3s linear;
+  opacity: 1;
+}
+
+.cardss{
+    margin-top: 200px; /* Add margin to prevent overlap with the navbar */
+    padding: 50px;
+    /* background-color: #f2f2f2; */
+}
+
+.new{
+    border-top: 1px solid rgb(244, 244, 244);;
+}

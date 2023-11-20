@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Advanced-EGFR-and-ACR-Calculator.css">
+    <link rel="stylesheet" href="Advanced-ABG-Analysis-with-Anion-Gap.css">
+
+    <link rel="shortcut icon" href="../assets/img/steth.png" type="image/x-icon">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="../assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="../assets/css/animate.css" rel="stylesheet" />
+    <link href="../assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: #ddf5f5;">
+    
+    <header id="home">
+        <nav class="navbar navbar-default navbar-fixed background-less black no-background bootsnav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                  
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp" >
+                        <li>
+                            <a href="../index.html" style="font-family: 'Nunito Sans', sans-serif;">HOME</a>
+                        </li>
+                        <li>
+                            <a href="../products.html" style="font-family: 'Nunito Sans', sans-serif;">Products</a>
+                        </li>
+                        <li>
+                            <a href="../AuskeyTrial2/about-auskey.html" style="font-family: 'Nunito Sans', sans-serif;">ABOUT AUSKEY</a>
+                        </li>
+                        <li>
+                            <a href="../spandan.html" style="font-family: 'Nunito Sans', sans-serif;">SPANDAN T & C</a>
+                        </li>
+                        <li>
+                            <a href="../icu-bundle-1.html" style="font-family: 'Nunito Sans', sans-serif;">ICU BUNDLE 1</a>
+                        </li>
+                       <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" style="font-family: 'Nunito Sans', sans-serif;">MORE</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" style="font-family: 'Nunito Sans', sans-serif;">Medical Algorithms</a></li>
+                            <li><a href="#" style="font-family: 'Nunito Sans', sans-serif;">AUDENING</a></li>
+                            <li><a href="../Sign-in-up/sign-in.html" style="font-family: 'Nunito Sans', sans-serif;">SIGN IN</a></li>
+                            <li><a href="../Sign-in-up/create-account.html" style="font-family: 'Nunito Sans', sans-serif;">CREATE ACCOUNT</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+    <section style="padding-top: 10vh;">
+        <center>
+            <p class="h4" style="font-family: 'Nunito Sans', sans-serif; padding-top: 4vh;">Advanced ABG Analysis with Anion Gap</p>
+        </center>
+        <form style="font-family: 'Nunito Sans', sans-serif;">
+            <label for="age">Age (years)</label>
+            <input type="number" id="age" name="age" required="">
+            <label for="creatinine">Serum Creatinine (mg/dL)</label>
+            <input type="number" id="creatinine" name="creatinine" step="0.01" required="">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required="">
+                <option value="">Select One</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <label for="race">Race</label>
+            <select id="race" name="race" required="">
+                <option value="">Select One</option>
+                <option value="african-american">African American</option>
+                <option value="non-african-american">Non-African American</option>
+            </select>
+            <br>
+            <label for="weight">Body Weight (kg)</label>
+            <input type="number" id="weight" name="weight" step="0.1" required="">
+            <label for="albumin">Urine Albumin (mg/dL)</label>
+  <input type="number" id="albumin" name="albumin" step="0.01" required="">
+  <label for="creatinine-urine">Urine Creatinine (mg/dL)</label>
+  <input type="number" id="creatinine-urine" name="creatinine-urine" step="0.01" required="">
+  <input type="submit" value="Calculate">
+  </form>
+    </section>
+    <div id="result"></div>
+    <div id = "result2"></div>
+
+      <footer>
+        <div class="container">
+            <div class="f-items default-padding">
+            </div>
+        </div>
+        <hr class="new">
+        <div class="footer-bottom">
+            <div class="container my-5">
+                    <div class="text-center ">
+                        <p  style="color: black;">MEDICAL INNOVATIONS</p>
+                        <p  style="color: black;" class="mb-0">COPYRIGHT &copy; 2023 INNOVATIVE MEDICAL DEVICES - ALL RIGHTS RESERVED </p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Advanced-EGFR-and-ACR-Calculator.js"></script>
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/.js"></script>
+    <script src="../assets/js/bootsnav.js"></script>
+
+
+
+</body>
+</html>
